@@ -1,5 +1,5 @@
  <p align="center">
-  <img src="screenshots/logo.png" width="180" alt="MyManga Logo" />
+  <img src="logo.png" width="180" alt="MyManga Logo" />
 </p>
 
 <h1 align="center">MyManga</h1>

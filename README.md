@@ -32,24 +32,24 @@
 ### 🏠 Home, Search and Library
 
 <p align="center">
-  <img src="screenshots/Home_screen.jpeg" width="31%" alt="MyManga Home Screen" />
-  <img src="screenshots/Search_screen.jpeg" width="31%" alt="Manga Search Screen" />
-  <img src="screenshots/Library_screen.jpeg" width="31%" alt="Manga Library Screen" />
+  <img src="Home_screen.jpeg" width="31%" alt="MyManga Home Screen" />
+  <img src="Search_screen.jpeg" width="31%" alt="Manga Search Screen" />
+  <img src="Library_screen.jpeg" width="31%" alt="Manga Library Screen" />
 </p>
 
 ### 📖 Manga Reader
 
 <p align="center">
-  <img src="screenshots/Manga_screen.jpeg" width="46%" alt="Manga Reader" />
-  <img src="screenshots/Manga_screen2.jpeg" width="46%" alt="Manga Reader Controls" />
+  <img src="Manga_screen.jpeg" width="46%" alt="Manga Reader" />
+  <img src="Manga_screen2.jpeg" width="46%" alt="Manga Reader Controls" />
 </p>
 
 ### 📊 Activity, Profile and Settings
 
 <p align="center">
-  <img src="screenshots/Activity_screen.jpeg" width="31%" alt="Reading Activity" />
-  <img src="screenshots/Profile_screen.jpeg" width="31%" alt="User Profile" />
-  <img src="screenshots/Settings_screen.jpeg" width="31%" alt="App Settings" />
+  <img src="Activity_screen.jpeg" width="31%" alt="Reading Activity" />
+  <img src="Profile_screen.jpeg" width="31%" alt="User Profile" />
+  <img src="Settings_screen.jpeg" width="31%" alt="App Settings" />
 </p>
 
 ---

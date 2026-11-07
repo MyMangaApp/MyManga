@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Kotlin-2.0.0-7F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Jetpack_Compose-Material_3-4285F4.svg?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" />
   <img src="https://img.shields.io/badge/Android-6.0%2B-3DDC84.svg?style=for-the-badge&logo=android&logoColor=white" alt="Android 6.0+" />
-  <img src="https://img.shields.io/badge/Version-v2.6.0-E53935.svg?style=for-the-badge" alt="Version v2.6.0" />
+  <img src="https://img.shields.io/badge/Version-v2.6.1-E53935.svg?style=for-the-badge" alt="Version v2.6.1" />
   <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg?style=for-the-badge" alt="GPL-3.0 License" />
 </p>
 
@@ -57,69 +57,225 @@
 ## ✨ Key Features
 
 ### 🎨 Modern User Interface
-- Material Design 3 components with a dark reading interface.
-- Responsive layouts and Compose-based UI.
+- Material Design 3 components with a modern reading interface.
+- Responsive layouts and Jetpack Compose-based UI.
 - Customizable reader preferences.
+- Improved profile interface with premium pastel styling.
+- Smooth horizontal reading gestures.
 
 ### 📚 Manga Discovery and Search
 - Browse and search manga from supported sources.
-- Integrated client implementations for MangaDex, MangaFire, Mangapill, WeebCentral and AniList.
+- Multi-source manga provider integration.
 - Manga metadata, catalog and search functionality.
 - Curated manga catalog support.
+- Provider selection and chapter fallback.
+
+**Supported Manga Providers:**
+- MangaPill
+- MangaDex
+- MangaFire
+- MangaBuddy
+- WeebCentral
+
+Additional integrations include AniList-related functionality where supported.
 
 *Provider availability and functionality may depend on the source website, network access and current implementation.*
 
 ### 📖 Manga and Webtoon Reader
 - Reading interface for manga and webtoon content.
 - Reader navigation and progress tracking.
+- Horizontal and vertical reading modes.
+- Smooth horizontal page-swiping gestures.
 - Volume-key navigation support where implemented.
 - Reading history and bookmarks.
+- Chapter continuity when switching providers.
+- Improved reader controls and app bar.
 
 ### 📥 Library and Downloads
-- Save manga to your library.
+- Save manga to your personal library.
 - Organize reading progress and bookmarks.
+- Track reading activity.
 - Download-related data models and functionality.
 - Local storage for supported app data.
 
 ### 📊 Reading Analytics
 - Reading activity tracking.
-- Reading-time and streak-related analytics.
-- Reading analytics dashboard components.
+- Reading-time statistics.
+- Reading streak tracking.
+- Reading analytics dashboard.
+- Personalized reading statistics.
 
 ### 👤 Profile Customization
-- Profile screen and preferences.
-- Curated anime avatar and banner data.
-- Personalized profile information where supported by the implementation.
+- Personalized profile information.
+- Anime avatar selection.
+- Member Since tracking.
+- Interactive Member Since date editor.
+- Automatic date recovery from reading activity.
+- Premium Profile Status Share Card.
+- Top 3 most-read manga showcase.
+- High-resolution PNG profile card export.
+- Reading statistics and streak visualization.
 
 ### 💾 Backup and Restore
-- JSON-based data backup and restoration support.
+- JSON-based data backup and restoration.
+- Export manga reading data to phone storage.
 - Automatic backup worker and scheduling components.
-- Backup functionality depends on the app configuration and permissions.
+- 24-hour backup reminders.
+- Background backup notifications.
+- Backup status indicators.
+- Direct backup restoration from the Welcome Screen.
+- Automatic Member Since date recovery during restoration.
 
 ### 🔔 Notifications and Updates
 - Notification scheduling and background worker components.
 - Boot-related receiver support.
 - In-app update dialog and update information interface.
-- Update links and release information can be accessed through the configured application flow.
+- 24-hour backup protection notifications.
+- What's New dialog and release information.
+- One-time What's New chip dismissal.
+
+### 🎬 Anime Streaming Integration
+- Updated AniFlix series streaming URL integration.
+- One-tap anime streaming launch.
+- Brave Browser detection and integration.
+
+*Streaming availability depends on the external website and its current functionality.*
 
 ---
 
-## 🆕 What's New in v2.6.0
+## 🆕 What's New in v2.6.1 (Build 4)
 
-MyManga v2.6.0 expands the application's source code and UI components.
+**Release:** v2.6.1  
+**Build:** 4  
+**Previous Version:** v2.6.0 (Build 3)
 
-- Added reading analytics dashboard components.
-- Added profile customization components and anime avatar/banner data.
-- Added app data backup and restore management.
-- Added automatic backup worker and scheduling components.
-- Added notification worker and receiver components.
-- Added a maintenance screen and owner control panel.
-- Added an in-app update dialog.
-- Added volume-key navigation management.
-- Expanded the curated manga catalog implementation.
-- Updated Android application version information to `v2.6.0`.
+MyManga v2.6.1 introduces major improvements to manga provider reliability, profile customization, data protection, backup restoration and reader usability.
 
-See the [Releases page](https://github.com/MyMangaApp/MyManga/releases) for downloadable APKs and release-specific changes.
+### 🎨 Premium Profile Share Card Overhaul
+
+- Replaced the previous dark theme with a premium pastel lavender and cream theme.
+- Added subtle gradient backgrounds.
+- Added the official MyManga app logo badge in the top-right corner.
+- Removed the generic "Official Reader Card" label.
+- Added a Top 3 most-read manga showcase.
+- Added gold, silver and bronze ranking badges.
+- Redesigned reading statistics cards.
+- Added Chapters Read, Read Time and Day Streak statistics.
+- Added `mymanga.ai.studio` branding to the footer.
+- Added "Read unlimited manga on MyManga" footer text.
+- Improved shadows, spacing and typography.
+- Updated the in-app preview to match the exported high-resolution PNG.
+
+### 📅 Member Since Tracking and Restoration
+
+- Added original account creation date tracking.
+- Added Member Since display to the Profile screen and share card.
+- Fixed Member Since resetting to the current date during backup restoration.
+- Added date recovery from backup metadata.
+- Added date recovery from bookmarks, reading history and downloads.
+- Added automatic database activity date correction.
+- Added an interactive Member Since date editor.
+- Added DD/MM/YYYY date validation.
+- Added "Auto-detect from reading activity" functionality.
+
+### 🌐 Multi-Source Manga Providers
+
+Added support for five manga providers:
+
+1. MangaPill
+2. MangaDex
+3. MangaFire
+4. MangaBuddy
+5. WeebCentral
+
+Additional improvements:
+
+- Improved chapter availability through provider fallback.
+- Fixed chapter switching between providers.
+- Preserved the current chapter number when switching sources.
+- Added a customizable default manga provider setting.
+
+### 📦 24-Hour Backup Protection
+
+- Added a 24-hour backup reminder system.
+- Added direct JSON data export to phone storage.
+- Added an option to enable 24-hour automatic backup updates.
+- Added WorkManager-based background backup scheduling.
+- Added backup reminder postponement for 24 hours.
+- Added background backup notifications.
+- Added a backup status banner in Settings.
+- Added warning indicators when backup protection is inactive.
+- Added a green status indicator when automatic backup is enabled.
+
+### 📂 Returning User Welcome Screen
+
+- Added "Import Old MyManga Data 📦" to the initial Welcome / Username dialog.
+- Added direct backup restoration without entering a temporary username.
+- Improved reinstall and device-switch restoration workflows.
+- Restores username, anime avatar, bookmarks, reading history and streaks.
+
+### 🎬 Updated Anime Streaming Integration
+
+Updated the streaming URL structure to:
+
+```text
+https://aniflix-org.lovable.app/series/8/{anime-name}/s1/e1
+```
+
+Example:
+
+```text
+https://aniflix-org.lovable.app/series/8/jujutsu-kaisen/s1/e1
+```
+
+- Updated the AniFlix series URL format.
+- Added automatic Brave Browser detection.
+- Improved one-tap streaming launch.
+
+### 📖 Reader Experience Improvements
+
+- Removed redundant controls from the reader top app bar.
+- Fixed horizontal reading gesture conflicts.
+- Improved left and right page-swiping behavior.
+- Fixed horizontal reading mode getting stuck.
+- Improved reading navigation usability.
+
+### ⚙️ Settings Improvements
+
+- Added interactive What's New functionality.
+- The What's New chip disappears after being tapped once.
+- Dismissal state persists across app launches.
+- Improved settings interface cleanliness.
+
+### 🛠️ Technical Improvements
+
+- Improved backup restoration logic.
+- Enhanced reading activity date detection.
+- Added database-based Member Since correction.
+- Improved WorkManager backup scheduling.
+- Improved cross-provider chapter mapping.
+- Enhanced persistent settings behavior.
+- Improved gesture detection and reader interaction.
+
+---
+
+## 📊 Version Comparison
+
+| Feature | v2.6.0 (Build 3) | v2.6.1 (Build 4) |
+|---|---|---|
+| Profile Share Card | Dark theme | Premium pastel theme |
+| Manga Showcase | Previous design | Top 3 ranked manga |
+| Member Since | Missing / inaccurate | Tracking, restoration and editing |
+| Manga Providers | Limited selection | 5 integrated providers |
+| Chapter Switching | Could jump to latest | Preserves current chapter |
+| Default Provider | Previous configuration | User-configurable |
+| Horizontal Reader | Gesture conflicts | Improved page swiping |
+| Data Protection | Manual export | 24-hour backup reminders |
+| Automatic Backup | Previous configuration | WorkManager scheduling |
+| Welcome Screen | Username required | Direct backup import |
+| Anime Streaming | Previous URL | Updated AniFlix series URL |
+| Brave Integration | Previous behavior | Browser detection |
+| What's New | Static | Interactive dismissal |
 
 ---
 
@@ -221,19 +377,21 @@ Open the cloned project directory in Android Studio and allow Gradle to synchron
 
 ### 3. Configure local secrets if required
 
-The project includes an `.env.example` file for configuration. If a required service needs credentials, configure them locally using the project's expected format.
+The project includes an `.env.example` file for configuration.
+
+If a required service needs credentials, configure them locally using the project's expected format.
 
 **Never commit real API keys, passwords, signing credentials or other secrets to the public repository.**
 
 ### 4. Build the debug APK
 
-On Windows:
+**Windows:**
 
 ```powershell
 .\gradlew.bat assembleDebug
 ```
 
-On Linux or macOS:
+**Linux / macOS:**
 
 ```bash
 ./gradlew assembleDebug
@@ -241,13 +399,13 @@ On Linux or macOS:
 
 ### 5. Build the release APK
 
-On Windows:
+**Windows:**
 
 ```powershell
 .\gradlew.bat assembleRelease
 ```
 
-On Linux or macOS:
+**Linux / macOS:**
 
 ```bash
 ./gradlew assembleRelease
@@ -265,11 +423,17 @@ Build success and APK signing depend on the project's configuration and local en
 
 ## 📥 Download MyManga
 
-Visit the official GitHub Releases page to find available application versions:
+Visit the official GitHub Releases page to find available application versions.
 
-**[Download MyManga Releases](https://github.com/MyMangaApp/MyManga/releases)**
+<p align="center">
+  <a href="https://github.com/MyMangaApp/MyManga/releases">
+    <img src="https://img.shields.io/badge/Download-Latest_Release-E53935?style=for-the-badge&logo=android&logoColor=white" alt="Download MyManga" />
+  </a>
+</p>
 
-Older releases may remain available for users who need a previous version. Check each release's notes and assets before installing.
+Older releases may remain available for users who need a previous version.
+
+Check each release's notes and assets before installing.
 
 ---
 
@@ -288,9 +452,13 @@ Please include reproducible steps when reporting bugs.
 
 ## 📄 License and Disclaimer
 
-MyManga is distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See the [`LICENSE`](LICENSE) file for the applicable terms.
+MyManga is distributed under the **GNU General Public License v3.0 (GPL-3.0)**.
 
-Manga titles, artwork, trademarks and other third-party intellectual property belong to their respective owners. MyManga does not claim ownership of third-party content accessed through supported sources. Users are responsible for complying with applicable laws and the terms of the relevant content providers.
+See the [`LICENSE`](LICENSE) file for the applicable terms.
+
+Manga titles, artwork, trademarks and other third-party intellectual property belong to their respective owners.
+
+MyManga does not claim ownership of third-party content accessed through supported sources. Users are responsible for complying with applicable laws and the terms of the relevant content providers.
 
 ---
 
